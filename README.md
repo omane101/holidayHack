@@ -1,5 +1,4 @@
 # Math-to-Memory
-===
 
 ## Overview
 ### Description
