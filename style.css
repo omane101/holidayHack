@@ -83,3 +83,41 @@
 	 margin-top: 20px;
 }
  
+
+#change-mul {
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+	font-size: 24px;
+}
+
+#change-div {
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+	font-size: 24px;
+}
+
+#multiplication {
+	text-align: center;
+	padding-left: 300px;
+	font-size: 40px;
+}
+
+#continue-mul {
+	border-radius: 8px;
+	background-color: lightgreen;
+	font-size: 24px;
+}
+
+#continue-div {
+	border-radius: 8px;
+	background-color: lightgreen;
+	font-size: 24px;
+}
+
+#division {
+	text-align: center;
+	padding-left: 300px;
+	font-size: 40px;
+}
