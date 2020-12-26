@@ -1,70 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../style.css">
+<style>
+    h2 {
+            font-size: 44px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: -10px;
+        }
 
-    <style>
-        html {
-            font-family: Arial;
-            font-size: 16px;
-            background: #5e42a6;
-            color: white;
-        }
-        .sidebar {
-            position: fixed;
-            width: 25%;
-            height: 100vh;
-            background: #312450;
-            font-size: 0.65em;
-        }
-        .nav {
-            position: relative;
-            margin: 0 15%;
-            text-align: right;
-            top: 50%;
-            transform: translateY(-50%);
-            font-weight: bold;
-        }
-        .nav ul {
-            list-style: none;
-        }
-        .nav ul li {
-            position: relative;
-            margin: 3.2em 0;
-        }
-        .nav ul li a {
-            line-height: 5em;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: 0.4em;
-            color: rgba(255, 255, 255, 0.35);
-            display: block;
-            transition: all ease-out 300ms;
-        }
-        .nav ul li.active a {
-            color: white;
-        }
-        .nav ul li:not(.active)::after {
-            opacity: 0.2;
-        }
-        .nav ul li:not(.active):hover a {
-            color: rgba(255, 255, 255, 0.75);
-        }
-        .nav ul li::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 0.2em;
-            background: black;
-            left: 0;
-            bottom: 0;
-            background-image: linear-gradient(to right, #5e42a6, #b74e91);
-        }
+    p {
+        font-size: 36px;
         
-        .main {
+    }
+    .main {
             display: inline;
             margin-left: 15px;
             margin-right: 15px;
@@ -72,102 +24,49 @@
             font-weight: bold;
             color: white;
         }
+</style>
+<body >
+  <main class="main">
+    <aside class="sidebar">
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Welcome</a></li>
+          <li class="active"><a href="#">Progress </a></li>
+          <li><a href="../games/index.html">Game Hub </a></li>
+          <li><a href="../profile/index.html">Profile  </a></li>
+          <li><a href="../settings/index.html">Settings </a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section>
+        <br>
+        <br>
+        <br>
+        <div id='multiplication'>
 
-        h2 {
-            font-size: 44px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: -10px;
-        }
-
-        p {
-            font-size: 36px;
-            
-        }
-
-        #change-mul {
-            border-radius: 8px;
-            background-color: red;
-            color: white;
-            font-size: 24px;
-        }
-
-        #change-div {
-            border-radius: 8px;
-            background-color: red;
-            color: white;
-            font-size: 24px;
-        }
-
-        #multiplication {
-            text-align: center;
-            padding-left: 300px;
-            font-size: 40px;
-        }
-
-        #continue-mul {
-            border-radius: 8px;
-            background-color: lightgreen;
-            font-size: 24px;
-        }
-
-        #continue-div {
-            border-radius: 8px;
-            background-color: lightgreen;
-            font-size: 24px;
-        }
-
-        #division {
-            text-align: center;
-            padding-left: 300px;
-            font-size: 40px;
-        }
-    </style>
-</head>
-
-
-<body>
-    <main class="main">
-        <aside class="sidebar">
-          <nav class="nav">
-            <ul>
-              <li><a href="../index.html">Welcome</a></li>
-              <li class="active"><a href="#">Progress </a></li>
-              <li><a href="../profile/index.html">Profile  </a></li>
-              <li><a href="../settings/index.html">Settings</a></li>
-            </ul>
-          </nav>
-        </aside>
-
-        <section>
-            <br>
-            <br>
-            <br>
-            <div id='multiplication'>
-
-                    <h2>Multiplication (x)<br></h2>
-                    <p>Current: 2's multiplication &nbsp;&nbsp; <progress value = "50" max = "100"></progress></p>
-                    
-                    <button id='continue-mul'>Continue</button>
-                    <button id='change-mul'>Change</button>
+                <h2>Multiplication (x)<br></h2>
+                <p>Current: 2's multiplication &nbsp;&nbsp; <progress value = "50" max = "100"></progress></p>
                 
-            </div>
-        </section>
-        <br>
-        <br>
-        <br>
-        <section>
-            <div id='division'>
-            
-                <h2>Division (÷)<br></h2>
-                <p>Current: 5's divison &nbsp;&nbsp; <progress value = "50" max = "100"></progress></p>
+                 <a href="../flashcards_multiplication/index.html"> <button id='continue-mul'> Continue </button> </a>
                 
-                <button id='continue-div'>Continue</button>
-                <button id='change-div'>Change</button>
+                 <button onclick="location.href = '../multiply.html';" id='test-mul'>Test</button>
             
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div id='division'>
+        
+            <h2>Division (÷)<br></h2>
+            <p>Current: 5's divison &nbsp;&nbsp; <progress value = "50" max = "100"></progress></p>
+            
+            <a href="../flashcards_division/index.html"> <button id='continue-div'> Continue </button></a>
+            <button onclick="location.href = '../division.html';" id='test-div'>Test</button>
+        
+        </div>
+    </section>
+  </main>
 </body>
-
-</html>
+</html> 
