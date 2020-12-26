@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html {
+            font-family: Arial;
+            font-size: 16px;
+            background: #5e42a6;
+        }
+        .sidebar {
+            position: fixed;
+            width: 25%;
+            height: 100vh;
+            background: #312450;
+            font-size: 0.65em;
+        }
+        .nav {
+            position: relative;
+            margin: 0 15%;
+            text-align: right;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+        .nav ul {
+            list-style: none;
+        }
+        .nav ul li {
+            position: relative;
+            margin: 3.2em 0;
+        }
+        .nav ul li a {
+            line-height: 5em;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.4em;
+            color: rgba(255, 255, 255, 0.35);
+            display: block;
+            transition: all ease-out 300ms;
+        }
+        .nav ul li.active a {
+            color: white;
+        }
+        .nav ul li:not(.active)::after {
+            opacity: 0.2;
+        }
+        .nav ul li:not(.active):hover a {
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .nav ul li::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.2em;
+            background: black;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(to right, #5e42a6, #b74e91);
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-variant: small-caps;
+            font-weight: bold;
+           
+        }
+        
+        .avatar {
+            vertical-align: middle;
+            width: 200px;
+            height: 200px;
+            
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        #update {
+            border-radius: 8px;
+            background-color: lightgreen;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+        section {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <aside class="sidebar">
+          <nav class="nav">
+            <ul>
+              <li><a href="../index.html">Welcome</a></li>
+              <li><a href="../progress/index.html">Progress </a></li>
+              <li class="active"><a href="#">Profile</a></li>
+              <li><a href="../settings/index.html">Settings</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <section>
+            <h2>Profile</h2>
+
+            <img src="avatar.png" alt="Avatar" class="avatar">
+
+            <h3>Name: Student 1<br></h3>
+            <h3>Current Grade: Grade 5<br></h3>
+            <h3>Teacher: Mr. Smith<br></h3>
+            
+            <p>Level 5: <progress value = "50" max = "100"></progress></p>
+                    
+            <button id='update'>Update Profile</button>
+        </section>
+        
+
+    </main>
+</body>
+</html>
