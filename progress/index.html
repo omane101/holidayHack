@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../style.css">
+<style>
+    h2 {
+            font-size: 44px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: -10px;
+        }
+
+    p {
+        font-size: 36px;
+        
+    }
+    .main {
+            display: inline;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-variant: small-caps;
+            font-weight: bold;
+            color: white;
+        }
+</style>
+<body >
+  <main class="main">
+    <aside class="sidebar">
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Welcome</a></li>
+          <li class="active"><a href="#">Progress </a></li>
+          <li><a href="../games/index.html">Game Hub </a></li>
+          <li><a href="../profile/index.html">Profile  </a></li>
+          <li><a href="../settings/index.html">Settings </a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section>
+        <br>
+        <br>
+        <br>
+        <div id='multiplication'>
+
+                <h2>Multiplication (x)<br></h2>
+                <p>Current: 2's multiplication &nbsp;&nbsp; <progress value = "50" max = "100"></progress></p>
+                
+                 <a href="../flashcards_multiplication/index.html"> <button id='continue-mul'> Continue </button> </a>
+                
+                 <button id='change-mul'>Change</button>
+            
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div id='division'>
+        
+            <h2>Division (÷)<br></h2>
+            <p>Current: 5's divison &nbsp;&nbsp; <progress value = "50" max = "100"></progress></p>
+            
+            <a href="../flashcards_division/index.html"> <button id='continue-div'> Continue </button></a>
+            <button id='change-div'>Change</button>
+        
+        </div>
+    </section>
+  </main>
+</body>
+</html> 
